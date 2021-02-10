@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+  gap: 5px;
+  background-color: lightyellow;
+}
+
+section {
+  grid-column: span 4;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section div {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.circle div {
+  border-radius: 50%;
+}
+
+.oval div {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.trapezoid div {
+  border-bottom: 50px solid lightblue;
+  height: 0;
+  border-left: 50px solid lightyellow;
+  border-right: 50px solid lightyellow;
+}
+
+.rectangle div {
+  width: 200px;
+}
+
+.parallelogram div {
+  -webkit-transform: skew(30deg);
+          transform: skew(30deg);
+}
+
+.triangle div {
+  height: 0;
+  width: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 50px solid lightyellow;
+  border-right: 50px solid lightyellow;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=index.css.map */
